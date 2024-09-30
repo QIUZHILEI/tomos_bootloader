@@ -1,0 +1,21 @@
+[package]
+name = "tomos_bootloader"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tom_arch = { git = "https://github.com/QIUZHILEI/tom_arch.git", features = [
+    "riscv_M",
+    "riscv_S",
+    "riscv_timer",
+] }
+tom_device = { git = "https://github.com/QIUZHILEI/tom_device.git", features = [
+    "char",
+    "block",
+] }
+tom_timer = { git = "https://github.com/QIUZHILEI/tom_timer.git" }
+log = "0.4"
+gpt = { git = "https://github.com/QIUZHILEI/gpt.git" }
+serial = { git = "https://github.com/QIUZHILEI/serial.git" }
+sdio = { git = "https://github.com/QIUZHILEI/sdio.git" }
+minifat = { git = "https://github.com/QIUZHILEI/minifat.git" }
